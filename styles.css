@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --clr-violet-500: hsl(263, 55%, 52%);
+  --clr-grayish-100: hsl(210, 46%, 95%);
+  --clr-grayish-400: hsl(0, 0%, 81%);
+  --clr-grayish-800: hsl(217, 19%, 35%);
+  --clr-dark-blakish-800: hsl(219, 29%, 14%);
+  --clr-white-900: hsl(0, 0%, 100%);
+
+  /* font size */
+  --fs-1: 0.7rem;
+
+  /* font weight */
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /* font family */
+  --ff-1: "Barlow Semi Condensed", serif;
+}
+@media (width <= 375px) {
+  :root {
+    --fs-1: 0.5rem;
+  }
+}
+
+body {
+  background-color: var(--clr-grayish-100);
+  font-family: var(--ff-1);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-500);
+  line-height: 1.6;
+  color: var(--clr-grayish-400);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3,
+h2 {
+  color: var(--clr-white-900);
+}
+h2 {
+  font-weight: var(--fw-600);
+  line-height: 1;
+}
+main {
+  width: 100%;
+  padding: 40px 10px;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 100%;
+  box-shadow: 0px 0px 2px 0px black;
+}
+.card .head {
+  display: flex;
+  column-gap: 10px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.c1 {
+  background-color: var(--clr-violet-500);
+}
+.c2 {
+  background-color: var(--clr-grayish-800);
+}
+.c3 {
+  background-color: var(--clr-white-900);
+}
+.c5 {
+  background-color: var(--clr-dark-blakish-800);
+}
+.c3 h3,
+.c3 h2,
+.c4 h3,
+.c4 h2 {
+  color: var(--clr-grayish-800);
+}
+
+@media (width >= 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c e"
+      "d d";
+  }
+  .c1 {
+    grid-area: a;
+  }
+  .c5 {
+    grid-area: b;
+  }
+  .c2 {
+    grid-area: c;
+  }
+  .c4 {
+    grid-area: e;
+  }
+  .c3 {
+    grid-area: d;
+  }
+}
+
+@media (width >= 850px) {
+  main {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a a b c"
+      "d e e c";
+  }
+  .c1 {
+    grid-area: a;
+  }
+  .c2 {
+    grid-area: b;
+  }
+  .c3 {
+    grid-area: c;
+  }
+  .c4 {
+    grid-area: d;
+  }
+  .c5 {
+    grid-area: e;
+  }
+}

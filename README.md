@@ -10,14 +10,19 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Screenshot
 
+### DESKTOP VIEW
+
 ![DESKTOP VIEW](./images/desktop_view.png)
+
+### PHONE VIEW
+
 ![PHONE VIEW](./images/phone_view1.png)
 ![2](./images/phone_view2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/css-grid-gP_Tw1XXGa)
+- Live Site URL: [Add live site URL here](https://kmrzakir.github.io/testimonials-grid-section-main-frontend-mentor/)
 
 ### What I learned
 
